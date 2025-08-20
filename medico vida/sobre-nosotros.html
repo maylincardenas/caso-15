@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medico Vida | Sobre nosotros</title>
+  <meta name="description" content="Conoce en detalle a Medico Vida: misión, valores, equipo, servicios, horarios y formas de contacto." />
+
+  <style>
+    :root{
+      --primary:#11a3c7;   /* azul salud */
+      --primary-700:#0e87a5;
+      --accent:#27c4a8;    /* verde bienestar */
+      --text:#123;
+      --muted:#6b7280;
+      --bg:#f6f9fb;
+      --card:#ffffff;
+      --radius:18px;
+      --shadow:0 10px 25px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+    a{color:var(--primary);text-decoration:none}
+    img{max-width:100%;height:auto}
+
+    header{
+      position:sticky;top:0;z-index:50;
+      background:linear-gradient(90deg,var(--primary),var(--accent));
+      color:#fff;border-bottom:1px solid rgba(255,255,255,.15)
+    }
+    .wrap{max-width:1100px;margin:auto;padding:0 16px}
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:12px 0
+    }
+    .brand{display:flex;gap:10px;align-items:center;font-weight:700}
+    .brand img{width:40px;height:40px;border-radius:10px;background:#fff;padding:6px}
+    .nav a{color:#fff;margin-left:14px;font-weight:600}
+    .hero{
+
+
+      background:linear-gradient(120deg,#e6f8ff,#f7fffb);
+      padding:48px 0;border-bottom:1px solid #e5e7eb
+    }
+    .hero h1{margin:0 0 6px;font-size:clamp(28px,3.2vw,40px)}
+    .grid{
+      display:grid;gap:20px
+    }
+    @media(min-width:900px){ .grid-3{grid-template-columns:1.2fr 1fr 1fr} }
+    @media(min-width:700px){ .grid-2{grid-template-columns:1fr 1fr} }
+
+    .card{
+      background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);
+      padding:22px
+    }
+    .badge{display:inline-block;padding:4px 10px;border-radius:999px;background:#e8f7fb;color:var(--primary-700);font-weight:700;font-size:12px}
+    .list{margin:0;padding-left:18px}
+    .list li{margin:6px 0}
+    .kpi{display:flex;gap:14px;align-items:center;margin:10px 0}
+    .kpi .n{font-size:28px;font-weight:800;color:var(--primary)}
+    .muted{color:var(--muted)}
+
+    .servicio{border-left:4px solid var(--accent);padding-left:12px;margin:10px 0}
+    .horarios{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .horarios div{background:#f0fbff;border-radius:12px;padding:12px}
+    @media(max-width:520px){ .horarios{grid-template-columns:1fr} }
+
+    details{background:#f9fcff;border:1px solid #e5f2f6;border-radius:12px;padding:12px}
+    details+details{margin-top:10px}
+    summary{cursor:pointer;font-weight:700;color:var(--primary-700)}
+form{display:grid;gap:12px}
+    input,textarea,select{
+      width:100%;padding:12px;border:1px solid #dbe7ee;border-radius:12px;background:#fff
+    }
+    button{
+      padding:12px 18px;border:0;border-radius:12px;background:var(--primary);
+      color:#fff;font-weight:700;cursor:pointer
+    }
+    button:hover{background:var(--primary-700)}
+    footer{padding:30px 0;color:#556}
+    </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <img src="logo.png" alt="Logo Medico Vida" />
+        <span>Medico Vida</span>
+      </div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="sobre-nosotros.html" style="text-decoration:underline;">Sobre nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+<!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="badge">Conócenos</span>
+      <h1>Tu salud, nuestra prioridad</h1>
+      <p class="muted">Somos un centro médico integral comprometido con una atención cálida, oportuna y basada en evidencia.</p>
+    </div>
+  </section>
+
+  <main class="wrap" style="padding:24px 0 50px">
+    <!-- MISIÓN / VISIÓN / VALORES -->
+    <section class="grid grid-3">
+      <article class="card">
+        <h2 style="margin-top:0">Misión</h2>
+        <p>Brindar servicios de salud de calidad, centrados en la persona, con profesionales certificados y tecnología segura.</p>
+        <div class="kpi"><span class="n">+10</span><span>Años de experiencia</span></div>
+      </article>
+      <article class="card">
+        <h2 style="margin-top:0">Visión</h2>
+        <p>Ser el centro de referencia en la comunidad por nuestra atención humana, accesible e innovadora.</p>
+        <div class="kpi"><span class="n">98%</span><span>Satisfacción usuaria/o</span></div>
+      </article>
+      <article class="card">
+        <h2 style="margin-top:0">Valores</h2>
+        <ul class="list">
+          <li>Empatía y trato digno</li>
+          <li>Seguridad del paciente</li>
+          <li>Transparencia y ética</li>
+          <li>Mejora continua</li>
+        </ul>
+      </article>
+    </section>
+     <!-- EQUIPO -->
+    <section style="margin-top:26px" class="grid grid-2">
+      <div class="card">
+        <h2 style="margin-top:0">Nuestro equipo</h2>
+        <p class="muted">Profesionales colegiados/as y en formación constante.</p>
+        <div class="servicio">
+          <strong>Dra. Ana Rojas – Medicina General</strong>
+          <div class="muted">Colegiatura 12345 | Atención familiar y control de crónicos.</div>
+        </div>
+        <div class="servicio">
+          <strong>Dr. Luis Pérez – Pediatría</strong>
+          <div class="muted">Crecimiento y desarrollo, vacunas, urgencias leves.</div>
+        </div>
+        <div class="servicio">
+          <strong>Lic. Camila Soto – Enfermería</strong>
+          <div class="muted">Toma de muestras, curaciones, educación en salud.</div>
+        </div>
+        <!-- Agrega más perfiles según necesites -->
+      </div>
+      <!-- SERVICIOS DETALLADOS -->
+      <div class="card">
+        <h2 style="margin-top:0">Servicios detallados</h2>
+        <div class="servicio">
+          <strong>Consultas médicas integrales</strong>
+          <div class="muted">Presencial y teleconsulta, historia clínica digital y recetas electrónicas.</div>
+        </div>
+        <div class="servicio">
+          <strong>Laboratorio clínico</strong>
+          <div class="muted">Hematología, bioquímica, perfil tiroideo, pruebas rápidas y más.</div>
+        </div>
+        <div class="servicio">
+          <strong>Vacunatorio</strong>
+          <div class="muted">Esquemas infantiles y de adulto, campañas estacionales.</div>
+        </div>
+        <div class="servicio">
+          <strong>Atención 24/7</strong>
+          <div class="muted">Orientación telefónica y coordinación de urgencias.</div>
+        </div>
+      </div>
+    </section>
+     <!-- HORARIOS Y UBICACIÓN -->
+    <section class="grid grid-2" style="margin-top:26px">
+      <div class="card">
+        <h2 style="margin-top:0">Horarios</h2>
+        <div class="horarios">
+          <div><strong>Lun–Vie</strong><br>08:00 – 20:00</div>
+          <div><strong>Sáb</strong><br>09:00 – 14:00</div>
+        </div>
+        <p class="muted" style="margin-top:8px">Emergencias y orientación: 24 horas.</p>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0">Ubicación</h2>
+        <p>Av. Salud 123, Centro, Ciudad.</p>
+        <!-- Reemplaza el src con tu iframe de Google Maps -->
+        <div style="aspect-ratio:16/9;background:#eef6f9;border-radius:12px;display:grid;place-items:center">
+          <span class="muted">Aquí va tu mapa (Google Maps iframe)</span>
+        </div>
+      </div>
+    </section>
+    <!-- PREGUNTAS FRECUENTES -->
+    <section style="margin-top:26px" class="grid grid-2">
+      <div class="card">
+        <h2 style="margin-top:0">Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Atienden con seguros o convenios?</summary>
+          <p>Sí, trabajamos con aseguradoras seleccionadas. Consulta tu cobertura al agendar.</p>
+        </details>
+        <details>
+          <summary>¿Cómo pido hora?</summary>
+          <p>Por teléfono, WhatsApp o formulario. Confirmamos por correo/SMS.</p>
+        </details>
+        <details>
+          <summary>¿Tienen telemedicina?</summary>
+          <p>Sí, para controles, revisión de exámenes y consejería.</p>
+        </details>
+      </div>
+      <!-- CONTACTO -->
+      <div id="contacto" class="card">
+        <h2 style="margin-top:0">Contáctanos</h2>
+        <form onsubmit="event.preventDefault(); alert('¡Gracias! Te contactaremos pronto.'); this.reset();">
+          <div class="grid grid-2">
+            <div>
+              <label>Nombre</label>
+              <input required placeholder="Tu nombre completo" />
+            </div>
+            <div>
+              <label>Teléfono</label>
+              <input type="tel" placeholder="+56 9 ..." />
+            </div>
+          </div>
+          <div>
+            <label>Correo</label>
+            <input type="email" required placeholder="tu@correo.com" />
+          </div>
+          <div>
+            <label>Motivo</label>
+            <select>
+              <option>Agendar hora</option>
+              <option>Consulta general</option>
+              <option>Cotización empresa</option>
+              <option>Otros</option>
+            </select>
+          </div>
+          <div>
+            <label>Mensaje</label>
+            <textarea rows="4" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
+          </div>
+          <button type="submit">Enviar mensaje</button>
+          <p class="muted">También en WhatsApp: <a href="https://wa.me/56900000000" target="_blank" rel="noopener">+56 9 0000 0000</a></p>
+        </form>
+         </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="y"></span> Medico Vida · RUT 00.000.000-0 · Política de privacidad
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
