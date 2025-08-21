@@ -1,2 +1,15 @@
-# caso-15
-empresa medico vida
+21/08/2025
+
+documentos trabajados:
+-index.html
+-quienessomos.html
+-style.css
+
+
+
+
+tareas pendientes:
+-agregar carrusel 
+
+
+
