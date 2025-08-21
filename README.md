@@ -9,7 +9,8 @@ documentos trabajados:
 
 
 tareas pendientes:
--agregar carrusel 
+-Agregar un carrusel
+
 
 
 
